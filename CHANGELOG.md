@@ -19,6 +19,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.2.0] - 2025-01-04
 
 ### Added
+
 - Implemented new project structure with src directory
 - Created organized folder hierarchy:
   - src/app for main application code
@@ -29,6 +30,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added comprehensive README.md with project documentation
 
 ### Changed
+
 - Moved App.tsx to src/app directory
 - Relocated theme.ts to src/constants
 - Updated welcome message to show version 0.2
@@ -37,6 +39,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.1.0] - 2025-01-04
 
 ### Added
+
 - Initial project setup with Expo React Native
 - Basic TypeScript configuration
 - ESLint and Prettier setup for code formatting
@@ -46,6 +49,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - A shared theme file for consistent styling
 
 ### Changed
+
 - Updated welcome message to show version number
 - Configured lint-staged to handle all TypeScript and JavaScript files
 

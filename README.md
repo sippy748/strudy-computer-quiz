@@ -26,20 +26,18 @@ tech-quiz/
 
 ```
 
-
-
 ### Development Scripts
 
 \`\`\`json
 {
-  "start": "expo start",
-  "android": "expo start --android",
-  "ios": "expo start --ios",
-  "web": "expo start --web",
-  "format:check": "prettier . --check",
-  "format:fix": "prettier . --write",
-  "lint:fix": "eslint . --fix",
-  "lint:check": "eslint ."
+"start": "expo start",
+"android": "expo start --android",
+"ios": "expo start --ios",
+"web": "expo start --web",
+"format:check": "prettier . --check",
+"format:fix": "prettier . --write",
+"lint:fix": "eslint . --fix",
+"lint:check": "eslint ."
 }
 \`\`\`
 
@@ -54,5 +52,3 @@ tech-quiz/
    ```bash
    npm start
    ```
-
-
