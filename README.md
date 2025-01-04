@@ -15,10 +15,11 @@ tech-quiz/
 ├── .prettierrc    # Prettier configuration
 ├── app.json        # Expo configuration
 └── package.json    # Project dependencies and scripts
+```
 
 ## Splash Screen Versions
 
-![Splash Screen Versions](./assets/versions/SplashVersion.png)
+<img src="assets/versions/SplashVersion.png" alt="Splash Screen Versions" width="100%" />
 
 ## Getting Started
 
@@ -27,6 +28,7 @@ tech-quiz/
    ```bash
    npm install
    ```
+
 3. Start the development server:
    ```bash
    npm start

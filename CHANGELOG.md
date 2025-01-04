@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+
 - Implemented header component with profile image, greeting, and menu icon
 - Created StreakCard component for tracking daily progress
 - Created PracticeCard component with question counter badge
@@ -18,6 +19,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added ScrollView for better content scrolling
 
 ### Changed
+
 - Updated ESLint configuration for better code consistency
 - Improved project structure with new components directory
 - Enhanced dark theme implementation
@@ -27,6 +29,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Enhanced scrolling experience with hidden indicators
 
 ### Technical
+
 - Added proper TypeScript types for components
 - Implemented modular component architecture
 - Set up SafeAreaView for better iOS support

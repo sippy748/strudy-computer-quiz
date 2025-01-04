@@ -29,10 +29,7 @@ export const ExploreCard = ({ onChapterPress }: ExploreCardProps) => {
         </View>
         <Text style={styles.title}>Explore chapters</Text>
       </View>
-      <ScrollView 
-        style={styles.scrollView}
-        showsVerticalScrollIndicator={false}
-      >
+      <ScrollView style={styles.scrollView} showsVerticalScrollIndicator={false}>
         <View style={styles.chaptersGrid}>
           {CHAPTERS.map((chapter, index) => (
             <TouchableOpacity
@@ -78,7 +75,7 @@ const styles = StyleSheet.create({
     marginLeft: 12,
   },
   scrollView: {
-    maxHeight: 200, 
+    maxHeight: 200,
   },
   chaptersGrid: {
     flexDirection: "row",
