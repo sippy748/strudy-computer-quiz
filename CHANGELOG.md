@@ -7,14 +7,26 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-### Changed
-
+### Added
+- Implemented header component with profile image, greeting, and menu icon
+- Created StreakCard component for tracking daily progress
+- Added theme configuration with new color palette
+- Set up ESLint with Prettier for consistent code formatting
 - Updated code formatting rules:
   - Set tab width to 2 spaces
   - Enabled trailing commas
   - Configured double quotes for strings
   - Added consistent semicolon usage
 - Synchronized ESLint and Prettier configurations for better consistency
+
+### Changed
+- Updated ESLint configuration for better code consistency
+- Improved project structure with new components directory
+- Enhanced dark theme implementation
+- Moved App.tsx to src/app directory
+- Relocated theme.ts to src/constants
+- Updated welcome message to show version 0.2
+- Improved import paths to reflect new structure
 
 ## [0.2.0] - 2025-01-04
 
@@ -31,8 +43,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
-- Moved App.tsx to src/app directory
-- Relocated theme.ts to src/constants
 - Updated welcome message to show version 0.2
 - Improved import paths to reflect new structure
 

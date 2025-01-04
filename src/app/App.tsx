@@ -1,6 +1,7 @@
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, Image, View, SafeAreaView } from "react-native";
 import { theme } from "../constants/theme";
+import { StreakCard } from "../components/StreakCard";
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
           <Text style={styles.menuIcon}>☰</Text>
         </View>
       </View>
+      <StreakCard />
       <StatusBar style="light" />
     </SafeAreaView>
   );
