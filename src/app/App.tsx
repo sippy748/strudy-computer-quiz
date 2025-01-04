@@ -1,22 +1,30 @@
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, Image, View, SafeAreaView } from "react-native";
+import { StyleSheet, Text, Image, View, SafeAreaView, ScrollView } from "react-native";
 import { theme } from "../constants/theme";
 import { StreakCard } from "../components/StreakCard";
+import { PracticeCard } from "../components/PracticeCard";
+import { ReviewCard } from "../components/ReviewCard";
+import { ExploreCard } from "../components/ExploreCard";
 
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
-      <View style={styles.headerContainer}>
-        <Image source={require("../../assets/icon.png")} style={styles.headerLogo} />
-        <View style={styles.greetingContainer}>
-          <Text style={styles.greetingText}>Happy learning,</Text>
-          <Text style={styles.username}>Sippy</Text>
+      <ScrollView>
+        <View style={styles.headerContainer}>
+          <Image source={require("../../assets/icon.png")} style={styles.headerLogo} />
+          <View style={styles.greetingContainer}>
+            <Text style={styles.greetingText}>Happy learning,</Text>
+            <Text style={styles.username}>Sippy</Text>
+          </View>
+          <View style={styles.menuContainer}>
+            <Text style={styles.menuIcon}>☰</Text>
+          </View>
         </View>
-        <View style={styles.menuContainer}>
-          <Text style={styles.menuIcon}>☰</Text>
-        </View>
-      </View>
-      <StreakCard />
+        <StreakCard />
+        <PracticeCard />
+        <ReviewCard />
+        <ExploreCard />
+      </ScrollView>
       <StatusBar style="light" />
     </SafeAreaView>
   );

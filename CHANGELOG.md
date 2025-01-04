@@ -10,23 +10,30 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Implemented header component with profile image, greeting, and menu icon
 - Created StreakCard component for tracking daily progress
-- Added theme configuration with new color palette
+- Created PracticeCard component with question counter badge
+- Created ReviewCard component for previously attempted questions
+- Created ExploreCard component with vertically scrollable chapter grid
+- Added theme configuration with new color palette (peach and teal)
 - Set up ESLint with Prettier for consistent code formatting
-- Updated code formatting rules:
-  - Set tab width to 2 spaces
-  - Enabled trailing commas
-  - Configured double quotes for strings
-  - Added consistent semicolon usage
-- Synchronized ESLint and Prettier configurations for better consistency
+- Added ScrollView for better content scrolling
 
 ### Changed
 - Updated ESLint configuration for better code consistency
 - Improved project structure with new components directory
 - Enhanced dark theme implementation
-- Moved App.tsx to src/app directory
-- Relocated theme.ts to src/constants
-- Updated welcome message to show version 0.2
-- Improved import paths to reflect new structure
+- Added proper component organization with separate files
+- Improved UI layout with consistent spacing and margins
+- Converted horizontal chapter list to vertical grid with peek effect
+- Enhanced scrolling experience with hidden indicators
+
+### Technical
+- Added proper TypeScript types for components
+- Implemented modular component architecture
+- Set up SafeAreaView for better iOS support
+- Added TypeScript interfaces for component props
+- Implemented TouchableOpacity for interactive cards
+- Optimized scroll views with maxHeight constraints
+- Added peek effect for better content discovery
 
 ## [0.2.0] - 2025-01-04
 
