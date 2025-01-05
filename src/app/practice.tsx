@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, ScrollView } from 'react-native';
 import { theme } from '../constants/theme';
+import { StreakService } from '../utils/streakService';
 
 // Mock quiz data - replace with actual quiz questions
 const mockQuizQuestions = [
@@ -34,11 +35,12 @@ export default function PracticePage() {
   const [score, setScore] = useState(0);
   const [quizCompleted, setQuizCompleted] = useState(false);
 
+
   const handleAnswerSelect = (optionIndex: number) => {
     setSelectedAnswer(optionIndex);
   };
 
-  const handleSubmitAnswer = () => {
+  const handleSubmitAnswer = async () => {
     if (selectedAnswer === mockQuizQuestions[currentQuestionIndex].correctAnswer) {
       setScore(score + 1);
     }
@@ -48,9 +50,18 @@ export default function PracticePage() {
       setSelectedAnswer(null);
     } else {
       setQuizCompleted(true);
+      const percentageScore = (score + (selectedAnswer === mockQuizQuestions[currentQuestionIndex].correctAnswer ? 1 : 0)) 
+        / mockQuizQuestions.length * 100;
+      
+      try {
+        await StreakService.recordQuizCompletion(percentageScore);
+      } catch (error) {
+        console.error('Error recording streak:', error);
+      }
     }
   };
 
+  // Move restartQuiz before it's used
   const restartQuiz = () => {
     setCurrentQuestionIndex(0);
     setSelectedAnswer(null);
@@ -71,6 +82,10 @@ export default function PracticePage() {
       </View>
     );
   }
+
+  
+
+  
 
   const currentQuestion = mockQuizQuestions[currentQuestionIndex];
 

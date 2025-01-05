@@ -8,80 +8,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
-
-- Implemented header component with profile image, greeting, and menu icon
-- Created StreakCard component for tracking daily progress
-- Created PracticeCard component with question counter badge
-- Created ReviewCard component for previously attempted questions
-- Created ExploreCard component with vertically scrollable chapter grid
-- Added theme configuration with new color palette (peach and teal)
-- Set up ESLint with Prettier for consistent code formatting
-- Added ScrollView for better content scrolling
+- Implemented interactive Practice Quiz page (`/practice` route)
+  - Dynamic quiz navigation with next/finish buttons
+  - Score tracking and quiz completion state
+  - Responsive design with ScrollView
+  - Mock quiz questions with multiple-choice answers
+- Enhanced routing with dedicated practice quiz screen in `_layout.tsx`
 
 ### Changed
-
-- Updated ESLint configuration for better code consistency
-- Improved project structure with new components directory
-- Enhanced dark theme implementation
-- Added proper component organization with separate files
-- Improved UI layout with consistent spacing and margins
-- Converted horizontal chapter list to vertical grid with peek effect
-- Enhanced scrolling experience with hidden indicators
+- Updated routing configuration to support `/practice` route
+- Improved component modularity with separate practice quiz implementation
 
 ### Technical
+- Implemented React hooks for quiz state management
+- Added TypeScript typing for quiz-related state and interactions
+- Created responsive and interactive quiz user interface
+- Utilized theme constants for consistent styling
 
-- Added proper TypeScript types for components
-- Implemented modular component architecture
-- Set up SafeAreaView for better iOS support
-- Added TypeScript interfaces for component props
-- Implemented TouchableOpacity for interactive cards
-- Optimized scroll views with maxHeight constraints
-- Added peek effect for better content discovery
-
-## [0.2.0] - 2025-01-04
-
-### Added
-
-- Implemented new project structure with src directory
-- Created organized folder hierarchy:
-  - src/app for main application code
-  - src/components for reusable components
-  - src/constants for app constants
-  - src/types for TypeScript definitions
-  - src/utils for helper functions
-- Added comprehensive README.md with project documentation
-
-### Changed
-
-- Updated welcome message to show version 0.2
-- Improved import paths to reflect new structure
-
-## [0.1.0] - 2025-01-04
-
-### Added
-
-- Initial project setup with Expo React Native
-- Basic TypeScript configuration
-- ESLint and Prettier setup for code formatting
-- Husky and lint-staged for Git hooks
-- Basic app structure with welcome message
-- Version display in welcome message
-- A shared theme file for consistent styling
-
-### Changed
-
-- Updated welcome message to show version number
-- Configured lint-staged to handle all TypeScript and JavaScript files
-
-### References
-
-- [Expo Documentation](https://docs.expo.dev/)
-- [ESLint Setup Guide](https://docs.expo.dev/guides/using-eslint/)
-- [Prettier Setup Guide](https://prettier.io/docs/en/install)
-- [Husky Documentation](https://typicode.github.io/husky/)
-- [lint-staged Documentation](https://github.com/okonet/lint-staged)
-- [TypeScript in React Native](https://reactnative.dev/docs/typescript)
-
-[Unreleased]: https://github.com/username/tech-quiz/compare/v0.2.0...HEAD
-[0.2.0]: https://github.com/username/tech-quiz/compare/v0.1.0...v0.2.0
-[0.1.0]: https://github.com/username/tech-quiz/releases/tag/v0.1.0
+{{ ... }}
